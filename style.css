@@ -19,6 +19,7 @@ img{
 }
 .top-banner{
     background-image: url("top-banner.png");
+    padding-bottom: 10px;
     background-repeat: no-repeat;
 }
 section{
@@ -41,7 +42,6 @@ body{
     padding-left: 10px;
     font-weight: bolder;
     font-size: larger;
-    padding-right: 500px;
 }
 .nav-bar a{
     display: flex;
@@ -49,6 +49,7 @@ body{
     color:#111;
     margin-right: 30px;
     padding-top: 16px;
+    
     transition: 0.3s;
 }
 .nav-bar a:hover{
@@ -196,6 +197,9 @@ footer .waves #wave4{
         background-position-x: 0px;
     }
 }
-.warper{
-    
+.icon-bar{
+    background: darkorange;
+}
+.navbar-style{
+    box-shadow: 0 5px 10px #efefef;
 }
