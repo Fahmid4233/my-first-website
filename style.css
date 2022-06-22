@@ -19,8 +19,9 @@ img{
 }
 .top-banner{
     background-image: url("top-banner.png");
-    padding-bottom: 10px;
+    padding-top: 70px;
     background-repeat: no-repeat;
+    background-position-y: 50px;
 }
 section{
     height: 500px;
@@ -50,7 +51,6 @@ body{
     color:#111;
     margin-right: 30px;
     padding-top: 16px;
-    
     transition: 0.3s;
 }
 .nav-bar a:hover{
