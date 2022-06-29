@@ -227,3 +227,8 @@ footer .waves #wave4{
     font-size: 24px;
     font-weight: bolder;
 }
+@media screen and (max-width: 800px){
+    .goal,.waves,.foot{
+        width:100%;
+    }
+}
