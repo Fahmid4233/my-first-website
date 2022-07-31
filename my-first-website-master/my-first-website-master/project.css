@@ -1,0 +1,329 @@
+*{
+    font-family: sans-serif;
+}
+.text-highlight{
+    color: orange;
+}
+p{
+    width: 50%;
+}
+.half{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+    padding-top: 10px;
+}
+.half-width{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+    padding-top: 10px;
+}
+img{
+    width: 100%;
+}
+.top-banner{
+    background-image: url("top-banner.png");
+    padding-top: 70px;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    background: lightgreen;
+}
+section{
+    height: 600px;
+    
+}
+body{
+    margin: 0;
+    background-color: lightgreen;
+}
+.navbar a{
+    padding: 30px;
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: #D6DFFC; */
+    border-radius: 8px;
+    font-weight: bold;
+    
+    
+}
+.navbar .effect::after{
+    content: '';
+    background-color: #753BD9;
+    width: 0%;
+    height: 5px;
+    display: block;
+    transition: width 0.5s;
+}
+.navbar .effect:hover::after{
+    width: 100%;
+    transition: width 0.5s;
+}
+.navbar a:hover{
+    font-weight: bold;
+    border-radius: 20px;
+    color: #753BD9;
+    transition: 0.5s;
+}
+section .sec p{
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+    font-size: 22px;
+}
+.sec{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 40px gray;
+    height: 350PX;
+}
+.wow{
+    background-image: url("exp-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    
+}
+.second-banner{
+    background-image: url("dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#Dream1{
+    border-left: 7px solid;
+    border-image: linear-gradient(lightsalmon, tomato);
+    border-image-slice: 1;
+}
+#Dream2{
+    border-left: 7px solid;
+    border-image: linear-gradient(blue,cyan);
+    border-image-slice: 1;
+}
+#Dream1 p{
+    transform: translateX(100px);
+}
+#Dream2 p{
+    transform: translateX(100px);
+}
+footer a{
+    text-decoration: none;
+    color:#eee;
+    display: block;
+    padding-bottom: 30px;
+}
+footer{
+    background-color: #3586ff;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    color: #eee;
+    height: 300px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    float:left;
+}
+footer .waves .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background: url("wave.png");
+    background-size: 1000px 100px;
+}
+footer .waves #wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animwave 4s linear infinite;
+}
+@keyframes animwave {
+    0%{
+        background-position-x: 1000px;
+    }
+    50%{
+        background-position-x: 500px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+footer .waves #wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animwave2 2s linear infinite;
+}
+@keyframes animwave2 {
+    0%{
+        background-position-x: 1000px;
+    }
+    50%{
+        background-position-x: 500px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+footer .waves #wave3{
+    z-index: 1000;
+    opacity: 0.28;
+    bottom: 15px;
+    animation: animwave3 3s linear infinite;
+}
+@keyframes animwave3 {
+    0%{
+        background-position-x: 1000px;
+    }
+    50%{
+        background-position-x: 500px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+footer .waves #wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20;
+    animation: animwave4 2s linear infinite;
+}
+@keyframes animwave4 {
+    0%{
+        background-position-x: 1000px;
+    }
+    50%{
+        background-position-x: 500px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+.foot a{
+    display: block;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    font-weight: bolder;
+}
+.foot a:hover{
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    color: white;
+}
+.goal{
+    margin-right: 400px;
+    margin-top:-50px;
+}
+.goal span{
+    font-size: 24px;
+    font-weight: bolder;
+}
+@media screen and (max-width: 800px){
+    .goal,.waves,.foot{
+        width:100%;
+    }
+}
+@media screen and(max-width:600px) {
+    #Dream1{
+        flex-direction: column;
+        font-size: 12px;
+    }
+    #Dream2{
+        flex-direction: column;
+        font-size: 32px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    
+}
+#Dream1 p::after,#Dream2 p::after{
+    content: '';
+    background-color: #753BD9;
+    width: 0%;
+    height: 5px;
+    display: block;
+    transition: width 0.5s;
+}
+#Dream1 p:hover::after,#Dream2 p:hover::after{
+    width: 100%;
+    transition: width 0.5s;
+}
+.navbar .effect1::after{
+    content: '';
+    background-color: gray;
+    width: 100%;
+    height: 5px;
+    display: block;
+    transition: width 0.5s;
+}
+ol span{
+    font-weight: bold;
+}
+.project{
+    margin-left: 5%;
+    padding-left: 2%;
+    width: 90%;
+    padding-top: 10px;
+    box-shadow: 10px 10px 40px gray;
+    border-left: 7px solid;
+    border-right: 7px solid;
+    border-top: 7px solid;
+    border-bottom: 7px solid;
+    border-image: linear-gradient(blue,cyan);
+    border-image-slice: 1;
+}
+li{
+    padding: 15px;
+}
+.project-details{
+    margin-left: 5%;
+    margin-top: 100px;
+    padding-left: 2%;
+    width: 90%;
+    padding-top: 10px;
+    box-shadow: 10px 10px 40px gray;
+    border-left: 7px solid;
+    border-right: 7px solid;
+    border-top: 7px solid;
+    border-bottom: 7px solid;
+    border-image: linear-gradient(lightsalmon,tomato,red);
+    border-image-slice: 1;
+}
+.project-details p{
+    padding-left: 45%;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.project-details p::after{
+    content: '';
+    display: block;
+    height:5px;
+    width:20%;
+    background-color: #3586ff;
+    
+}
+
+.project-details li{
+    font-weight: bold;
+}
+.project-details ul{
+    box-shadow: 10px 10px 40px gray;
+    width: 120px;
+    
+}
+.button input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
